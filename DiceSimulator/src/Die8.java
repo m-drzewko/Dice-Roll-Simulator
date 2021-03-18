@@ -1,0 +1,11 @@
+import java.util.Random;
+
+public class Die8 {
+    private final int numberOfSides = 8;
+
+    public int rollDie() {
+        Random random = new Random();
+        int diceRoll = random.nextInt(numberOfSides + 1);
+        return diceRoll;
+    }
+}
