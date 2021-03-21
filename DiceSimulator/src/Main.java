@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner (System.in);
         System.out.println("What dice would you like to roll? (e.g. d6, d10)");
         String diceType = scanner.nextLine();
-
+        diceType = diceType.toLowerCase();
         System.out.println("How many dice of the chosen type would you like to roll?");
         int numberOfDice = scanner.nextInt();
 
